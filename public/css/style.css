@@ -1,0 +1,10 @@
+.img-datatables{
+	width: 100%;
+	height: auto;
+}
+.limited{
+    white-space: nowrap;
+    width: 100%;                   
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,78 @@
+.group{
+  position:relative;
+  margin:20px 10px;
+}
+.lab{
+  color: #8cb1ff;
+  font-size:15px;
+  position:absolute;
+  transition:0.2s ease all;
+  top:10px;
+  font-weight: normal;
+}
+input{color: black;}
+.lab:focus{color:#8cb1ff;}
+.bar:focus{border-bottom:1px solid #8cb1ff;}
+.insert , .pilih{
+  color:black;
+  font-size:15px;
+  padding :8px 0px 8px 0px;
+  display: block;
+  outline:none;
+  border: none;
+  width:100%;
+  border-bottom:1px solid #8cb1ff;
+  background-color: rgba(0, 0, 0, 0);
+}
+.bar{
+  position:relative;
+  display:block;
+  width:100%;
+}
+.bar:before, .bar:after{
+  content:"";
+  height:2px;
+  width:0;
+  bottom:-1px;
+  position:absolute;
+  background:#8cb1ff;
+  transition:0.2s ease all;
+}
+.bar:before{left:50%;}
+.bar:after{right:50%;}
+.insert:valid{border-bottom:1px solid #8cb1ff;}
+.insert:valid ~ .bar:before,{
+  background: #8cb1ff !important;
+}
+.insert:focus ~ .lab,
+.insert.used ~ .lab{
+  top:-8px;
+  font-size:13px;
+  color:#8cb1ff;
+}
+.insert:valid,
+.insert:valid.used{
+  color:black;
+}
+.insert:focus ~ .bar:before,
+.insert:focus ~ .bar:after{
+  width:50%;
+}
+.pilih:valid{border-bottom:1px solid #8cb1ff}
+.pilih:valid ~ .bar:before,{
+  background: #8cb1ff !important;
+}
+.pilih:focus ~ .lab,
+.pilih.used ~ .lab{
+  top:-8px;
+  font-size:13px;
+  color:#8cb1ff;
+}
+.pilih:valid ~ .lab,
+.pilih:valid.used ~ .lab{
+  color:#8cb1ff;
+}
+.pilih:focus ~ .bar:before,
+.pilih:focus ~ .bar:after{
+  width:50%;
+}

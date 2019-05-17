@@ -1,0 +1,354 @@
+body{
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+  font-family: myriad pro;
+  font-size: 15px;
+}
+.sub-header{
+  background: #8cb1ff;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: right;
+}
+.sub-header a{
+  display: inline-block;
+  color: white;
+  padding: 7px;
+  text-decoration: none;
+}
+.sub-header a:hover{
+  color:black;
+}
+.header{
+  background: #85e1d5;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: right;
+}
+.klik{
+  display: inline-block;
+  color:white;
+  padding:17px;
+  text-decoration: none;
+}
+.header form{
+
+  text-decoration: none;
+  margin-top: 3px;
+}
+.klik:hover{
+  color: black;
+  background-color: #eeeeee;
+}
+.merk{
+  display: inline-block;
+  color: white;
+  float: left;
+}
+a.merk:hover{
+  color: white;
+  background-color: rgba(0,0,0,0);
+}
+
+.sidenav {
+height: 100%;
+width:0;
+position: fixed;
+z-index: 1;
+top: 0;
+background-color:#f9f9f9;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 50px;
+right:0;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 20px;
+      text-decoration: none;
+      font-size: 15px;
+      color: black;
+      display: block;
+      transition: 0.5s;
+  }
+
+  .sidenav a:hover {
+      color: white;
+      font-weight:bold;
+  }
+
+  .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      font-size: 36px;
+  }
+
+  #main {
+      transition: margin-left 0.5s;
+      padding: 0;
+  }
+
+  .data{text-align: center;}
+  .sidenav-image
+  {width: 170px;margin-left:70px;margin-top:-50px;}
+  ::-webkit-scrollbar{
+    width: 6px;
+    background:white;
+  }
+  ::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 4px rgba(0,0,0,.3);
+    background-color:#11f64e;
+  }
+  .heres{
+    padding: 7px;
+  }
+  .ico{
+    float: right;
+    padding:17px;
+    color: #fff;
+  }
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #8cb1ff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 15px;
+      color: white;
+      display: block;
+      transition: 0.5s;
+      text-align: left;
+  }
+
+  .sidebar a:hover {
+      color: black;
+      background: #eeeeee;
+  }
+
+  .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+  .sidebar .closebtn:hover{
+    background: rgba(0,0,0,0);
+  }
+  #canvas {
+      transition: margin-left 0.5s;
+      padding: 16px;
+  }
+
+
+/*Clearing Floats*/
+.cf:before, .cf{
+    content:"";
+    display:table;
+}
+
+.cf:after{
+    clear:both;
+}
+
+.cf{
+    zoom:1;
+}
+/* Form dekstop styling */
+.form-dekstop {
+    width: 50%;
+    padding: 5px;
+    background: #444;
+    background: rgba(0,0,0,0);
+    float:left;
+    margin-left: 5%;
+}
+
+/* Form text input */
+
+.form-dekstop input {
+    width: 90%;
+    height: 35px;
+    padding: 10px 15px;
+    float: left;
+    font-size: 15px;
+    border: 0;
+    background: white;
+    border: 1px solid #dbdbdb;
+}
+
+.form-dekstop input:focus {
+    outline: 0;
+    background: #fff;
+}
+
+.form-dekstop input::-webkit-input-placeholder {
+   font-size: 15px;
+}
+
+.form-dekstop input:-moz-placeholder {
+    font-size: 15px;
+}
+
+.form-dekstop input:-ms-input-placeholder {
+    font-size: 15px;
+}
+
+/* Form submit button */
+.form-dekstop button {
+    overflow: visible;
+    position: relative;
+    border: 0;
+    padding: 2px;
+    cursor: pointer;
+    height: 35px;
+    width:10%;
+    color: #fff;
+    text-transform: uppercase;
+    background: 	#11f64e;
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}
+
+.form-dekstop button:hover{
+    background: #12f51e;
+}
+
+.form-dekstop button:active,
+.form-dekstop button:focus{
+    background: #13f51e;
+    outline: 0;
+}
+
+.form-dekstop button:before { /* left arrow */
+    content: '';
+    position: absolute;
+    border-color: transparent #d83c3c transparent;
+    top: 12px;
+}
+
+.form-dekstop button:hover:before{
+    border-right-color: #e54040;
+}
+
+.form-dekstop button:focus:before,
+.form-dekstop button:active:before{
+        border-right-color: #c42f2f;
+}
+
+.form-dekstop button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}
+
+.form-mobile {
+    width: 100%;
+    padding: 5px;
+    background: #444;
+    background: rgba(0,0,0,0);
+}
+
+/* Form text input */
+
+.form-mobile input {
+    width: 90%;
+    height: 35px;
+    padding: 10px 15px;
+    float: left;
+    font-size: 15px;
+    border: 0;
+    background: white;
+    border: 1px solid #dbdbdb;
+}
+
+.form-mobile input:focus {
+    outline: 0;
+    background: #fff;
+}
+
+.form-mobile input::-webkit-input-placeholder {
+   font-size: 15px;
+}
+
+.form-mobile input:-moz-placeholder {
+    font-size: 15px;
+}
+
+.form-mobile input:-ms-input-placeholder {
+    font-size: 15px;
+}
+
+/* Form submit button */
+.form-mobile button {
+    overflow: visible;
+    position: relative;
+    border: 0;
+    padding: 2px;
+    cursor: pointer;
+    height: 35px;
+    width:10%;
+    color: #fff;
+    text-transform: uppercase;
+    background: #11f64e	;
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}
+
+.form-mobile button:hover{
+    background: #12f51e;
+}
+
+.form-mobile button:active,
+.form-mobile button:focus{
+    background: #13f51e;
+    outline: 0;
+}
+
+.form-mobile button:before { /* left arrow */
+    content: '';
+    position: absolute;
+    border-color: transparent #d83c3c transparent;
+    top: 12px;
+}
+
+.form-mobile button:hover:before{
+    border-right-color: #e54040;
+}
+
+.form-mobile button:focus:before,
+.form-mobile button:active:before{
+        border-right-color: #c42f2f;
+}
+
+.form-mobile button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+}
+.header-dekstop
+{
+  display: block;
+}
+.header-mobile{
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .header-dekstop
+  {
+    display:none;
+  }
+  .header-mobile{
+    display:block;
+  }
+}
+.dropdown-menu>li>a{
+  text-align: left;
+}
